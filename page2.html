@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about salon</title>
     <link rel="stylesheet" href="./page2.css" />
+    <script src="./index.js" defer></script>
   </head>
-  <body>
+  <body class="body">
     <div class="container">
       <nav>
         <div class="nav-2">
@@ -21,11 +22,17 @@
               <a href="">blog</a>
               <a href="">shop</a>
             </div>
-            <div class="nav-svg">
+             <div class="nav-svg">
               <img class="line" src="./svg/black-nav-line.svg" alt="" />
               <img class="search" src="./svg/search-black.svg" alt="" />
-              <img class="bag" src="./svg/black-bag.svg" alt="" />
+              <img class="bag" id="bag" src="./svg/black-bag.svg" alt="" />
+              <div class="menu" id="burger">
               <img class="burger" src="./svg/line-black.svg" alt="" />
+              <ul class="nav-list">
+                 <ol id="btn">page-01</ol>
+                 <ol id="goBtn" >page-02</ol>
+              </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -41,14 +48,14 @@
                 </h1>
               </div>
 
-              <div class="main-1-radius">
-                <h2>book now</h2>
-              </div>
+                  <div class="main-button">
+                   <button>Page-1</button>
+            </div>
             </div>
 
             <div class="photo-wrapper">
               <img
-                src="./img/f5e1347d39411c68114d0efd94a3605abd18f9f9.jpg"
+                src="./img/page-2-img-01.png"
                 alt=""
                 srcset=""
               />
@@ -78,7 +85,7 @@
           </div>
         </div>
 
-        <div class="main-2-container">
+        <div class="real main-2-container">
           <div class="main-2-heder">
             <div class="main-2-card">
               <div class="svg-main2">
@@ -152,7 +159,7 @@
             </div>
           </div>
         </div>
-        <div class="main-3-container">
+        <div class="real main-3-container">
           <div class="kavichki-main-3">
             <img src="./svg/real-kavichki.svg" alt="" />
           </div>
@@ -164,7 +171,7 @@
             </p>
           </div>
         </div>
-        <div class="main-4-container">
+        <div class="real main-4-container">
           <div class="main-4-content">
             <h2>the services</h2>
             <div class="main-4-card">
@@ -215,7 +222,7 @@
             </div>
           </div>
         </div>
-        <div class="main-5-container">
+        <div class="real main-5-container">
           <div class="main-5-text">
             <h3>
               Treat <br />
@@ -249,7 +256,7 @@
             </div>
           </div>
         </div>
-        <div class="main-6-container">
+        <div class="real main-6-container">
           <div class="main-6-content">
             <h3>the product</h3>
             <div class="card-6">
@@ -298,7 +305,7 @@
             </div>
           </div>
         </div>
-        <div class="main-7-container">
+        <div class="real main-7-container">
           <div class="main-7-text">
             <h2>
               learn more about <br />
@@ -330,7 +337,7 @@
           </div>
           <div class="main-7-hr"><hr /></div>
         </div>
-        <div class="main-8-container">
+        <div class="real main-8-container">
            <div class="text-8">
             <h2>testimonial</h2>
           </div>
@@ -379,7 +386,7 @@
             <img class="main-8-svg-06" src="./svg/Aset-06.svg" alt="" />
           </div>
         </div>
-          <div class="main-9-container">
+          <div class="real main-9-container">
             <div class="main-9-text"> 
                  <h2>connect us on instagram</h2>
             </div>
@@ -393,7 +400,7 @@
               <h2>instagarm</h2>
             </div>
         </div>
-        <div class="main-10-container">
+        <div class="real main-10-container">
              <div class="main-10-text">
                <h2>newsletter</h2>
              </div>

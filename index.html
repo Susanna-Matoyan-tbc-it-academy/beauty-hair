@@ -1,38 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
   </head>
-  <body>
+  <body class="body">
     <div class="container">
       <nav>
-      
         <hr class="heder-hr" />
         <div class="nav-2">
           <div class="nav-2-text">
-            <img src="./svg/cassini.svg" alt="" />
+            <a href="#home"> <img src="./svg/cassini.svg" alt="" /></a>
           </div>
           <div class="nav-a-teg-container">
             <div class="nav-a-teg">
-              <a href="">Home</a>
-              <a href="">pages</a>
-              <a href="">service</a>
-              <a href="">blog</a>
-              <a href="">shop</a>
+              <a href="#home">Home</a>
+              <a href="#hairstyles">Hairstyles</a>
+              <a href="#prices">Prices</a>
+              <a href="#hairdresser">Hairdresser</a>
+              <a href="#Latest">Latest</a>
+              <a href="#product">Product</a>
+              <a href="#contact">Contact</a>
             </div>
             <div class="nav-svg">
               <img class="line" src="./svg/Rectangle.svg" alt="" />
-              <img class="search" src="./svg/search.svg" alt="" />
-              <img class="bag" src="./svg/bag.svg" alt="" />
-              <img class="burger" src="./svg/burger.svg" alt="" />
+              <img class="search" id="search" src="./svg/search.svg" alt="" />
+              <img class="bag" id="bag" src="./svg/bag.svg" alt="" />
+              <div class="menu" id="burger">
+                <img class="burger" src="./svg/burger.svg" alt="" />
+                <ul class="nav-list">
+                  <ol id="btn">
+                    page-01
+                  </ol>
+                  <ol id="goBtn">
+                    page-02
+                  </ol>
+                </ul>
+              </div>
             </div>
+          </div>
+          <div class="input-nav">
+            <input id="input-text" type="text" />
+            <button class="btn-input" id="btn-input">search</button>
           </div>
         </div>
       </nav>
-      <div class="main-container">
+      <div id="home" class="main-container">
         <div class="main-container-content">
           <div class="main-container-text">
             <div class="main-text">
@@ -54,7 +70,7 @@
               </div>
             </div>
             <div class="main-button">
-              <button>book</button>
+              <button>Book-now</button>
             </div>
           </div>
           <div class="main-container-img">
@@ -68,366 +84,507 @@
         </div>
       </div>
       <main>
-        <div class="main-1-container">
+        <div id="about" class="real main-1-container">
           <div class="main-1-img">
             <img src="./img/hair-salon.jpg" alt="" />
           </div>
           <div class="main-1-text-container">
             <div class="main-1-text">
-            <div class="main-1-onlytext">
-            <h2>about us</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br>
-               do eiusmod tempor incididunt ut labore et dolore magna <br> 
-               aliqua. Fermentum leo vel orci porta non.
-            </p>
-            <ul>
-                <li>Leslie Alexander</li>
-            </ul>
-            </div>
-            <div class="main-1-button">
+              <div class="main-1-onlytext">
+                <h2>about us</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  <br />
+                  do eiusmod tempor incididunt ut labore et dolore magna <br />
+                  aliqua. Fermentum leo vel orci porta non.
+                </p>
+                <ul>
+                  <li>Leslie Alexander</li>
+                </ul>
+              </div>
+              <div class="main-1-button">
                 <button>book</button>
-            </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="main-2-container">
-               <div class="heder-main2">
-                <div class="main-2-text">
-                 <h2>our sample <i>hairstyles</i></h2>
+        <div id="hairstyles" class="real main-2-container">
+          <div class="heder-main2">
+            <div class="main-2-text">
+              <h2>our sample <i>hairstyles</i></h2>
+            </div>
+            <div class="border">
+              <img src="./svg/strelka.svg" alt="" />
+            </div>
+          </div>
+          <div class="hr-main2">
+            <hr />
+          </div>
+          <div class="img-main2-container slider-wrapper">
+            <div class="slider" id="slider">
+              <div class="track">
+                <div class="img-main2-div">
+                  <img src="./img/03.png" alt="" />
                 </div>
-                 <div class="border">
-                    <img src="./svg/strelka.svg" alt="">
-                 </div>
-               </div>
-               <div class="hr-main2">
-               <hr>
-               </div>
-               <div class="img-main2-container">
-                   <div class="img-main2-div">
-                     <img src="./img/03.png" alt="">
-                   </div>
-                   <div class="img-main2-div">
-                     <img src="./img/04.png" alt="">
-                   </div>
-                   <div class="img-main2-div">
-                     <img src="./img/05.jpg" alt="">
-                   </div>
-               </div>
-        </div>
-        <div class="main-3-container">
-               <div class="main-3-text">
-                  <h2>haircut prices</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
-                     eiusmod tempor incididunt ut labore</p>
-               </div>
-               <div class="main-3-content">
-                    <div class="main-3-img">
-                      <div class="img3-div-1">
-                       <img src="./img/08.png" alt="">
-                      </div>
-                      <div class="img-3">
-                        <div class="img3-div-2">
-                          <img src="./img/09.jpg" alt="">
-                        </div>
-                        </div>
-                      </div>
-                    <div class="main-3-cardtext">
-                           <div class="main-3-text-img">
-                                <h2>hair cut with blow dry</h2>
-                                <img src="./svg/Frame (1).svg" alt="">
-                           </div>
-                              <div class="main-3-text-svg">
-                                <h2>Blow dry & curl</h2>
-                                <span>$35</span>
-                           </div>
-                            <div class="main-3-text-svg">
-                                <h2>Blow dry & curl</h2>
-                                <span>$35</span>
-                           </div>
-                            <div class="main-3-text-svg">
-                                <h2>Blow dry & curl</h2>
-                                <span>$35</span>
-                           </div>
-                            <div class="main-3-text-svg">
-                                <h2>Blow dry & curl</h2>
-                                <span>$35</span>
-                           </div>
-                           
-                    </div>
-                      <div class="main-3-img main-3-img-content">
-                        <div class="img-3">
-                      <div class="img3-div-2">
-                       <img src="./img/10.png" alt="">
-                      </div>
-                      </div>
-                        <div class="img3-div-1 ">
-                          <img src="./img/11.png" alt="">
-                        </div>
-                      </div>
-               </div>
-        </div>
-         <div class="main-4-container">
-          <div class="main-4-heder">
-             <div class="heder-main2 heder-text-main4">
-                <div class="main-2-text">
-                 <h2>meet the our hairdresser <i>hairdresser</i></h2>
+                <div class="img-main2-div">
+                  <img src="./img/04.png" alt="" />
                 </div>
-                 <div class="border">
-                    <img src="./svg/strelka.svg" alt="">
-                 </div>
-               </div>
-               <div class="hr-main2">
-               <hr>
-               </div>
+                <div class="img-main2-div">
+                  <img src="./img/05.jpg" alt="" />
+                </div>
+                <div class="img-main2-div">
+                  <img src="./img/scrol-01.jpg" alt="" />
+                </div>
+                <div class="img-main2-div">
+                  <img src="./img/scrol-02.jpg" alt="" />
+                </div>
+                <div class="img-main2-div">
+                  <img src="./img/scrol-03.jpg" alt="" />
+                </div>
+                <div class="img-main2-div">
+                  <img src="./img/scrol-04.jpg" alt="" />
+                </div>
+                <div class="img-main2-div">
+                  <img src="./img/scrol-05.jpg" alt="" />
+                </div>
+                <div class="img-main2-div">
+                  <img src="./img/scrol-06.jpg" alt="" />
+                </div>
+                <div class="img-main2-div">
+                  <img src="./img/scrol-07.jpg" alt="" />
+                </div>
+                <div class="img-main2-div">
+                  <img src="./img/scrol-08.jpg" alt="" />
+                </div>
               </div>
-               <div class="main-4-content">
-                    <h2>If you can dream it you can be it</h2>
-                    <div class="main-4-img">
-                      <div class="main-4-img-1">
-                         <img src="./img/12.png" alt="">
-                      </div>
-                      <div class="main-4-img-2">
-                         <img src="./img/13.png" alt="">
-                      </div>
-                      <div class="main-4-img-3">
-                          <img src="./img/14.png" alt="">
-                      </div>
-                    </div>
-               </div>
-         </div>
-         <div class="main-5-container">
-            <div class="main-5-content">
-                <span>hair salon</span>
-                 <img class="main-5-girl" src="./img/15.png" alt="">
-                 <span>hair style</span>
-                 <img class="main-5-star" src="./svg/Star 2.svg" alt="">
-                 <span>hairdresser</span>
-                 <img class="main-5-girl" src="./img/16.png" alt="">
-                 <span>hair salon</span>
-                 <img class="main-5-star" src="./svg/Star 2.svg" alt="">
-                 <span>hair style</span>
-                 <img class="main-5-girl" src="./img/17.png" alt="">
-                 <span>hairdresser</span>
             </div>
-            <div class="main-5-img">
-              <img src="./img/video.png" alt="">
-            </div>
-         </div>
-         <div class="main-6-container">
-             <div class="main-6-content">
-              <div class="main-6-text">
-                      <h2>customer reviews</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
-                         eiusmod tempor incididunt ut labore</p>
-                    </div>
-                    <div class="main-6-card">
-                       <hr class="card-hr">
-                      <div class="card-1">
-                        <div class="card">
-                           <img class="kavichki" src="./svg/kavichki.svg" alt="">
-                           <p>Lorem ipsum dolor sit amet, consectetur <br>
-                             adipiscing elit, sed do eiusmod tempor incididunt <br>
-                              ut labore et dolore magna aliqua.</p>
-                              <img class="avatar" src="./img/18.png" alt="">
-                              <h2>Coy Frappier</h2>
-                        </div>
-                        <div class="hr-6">
-                         <hr>
-                        </div>
-                            <div class="card">
-                           <img class="kavichki" src="./svg/kavichki.svg" alt="">
-                           <p>Congue quisque egestas diam in arcu. Cras <br>
-                             fermentum odio eu feugiat pretium nibh. Viverra <br>
-                              justo nec ultrices dui sapien eget.</p>
-                              <img class="avatar" src="./img/19.png" alt="">
-                              <h2>Ahmad Pasrand</h2>
-                        </div>
-                        <div class="hr-6">
-                        <hr>
-                      </div>
-                       <div class="card">
-                           <img class="kavichki" src="./svg/kavichki.svg" alt="">
-                           <p>Sed vulputate mi sit amet. Malesuada fames ac <br>
-                             turpis egestas. Turpis egestas sed tempus urna et. <br>
-                              Vitae tempus quam pellentesque.</p>
-                              <img class="avatar" src="./img/20.png" alt="">
-                              <h2>Woodrow Trusty</h2>
-                        </div>
-                      </div>
-                      <hr class="card-hr">
-                      <div class="card-2">
-                       <div class="card">
-                           <img class="kavichki" src="./svg/kavichki.svg" alt="">
-                           <p>Dui vivamus arcu felis bibendum ut. Proin <br>
-                             fermentum leo vel orci porta non pulvinar neque. <br>
-                              Feugiat in ante metus dictum at tempor.</p>
-                              <img class="avatar" src="./img/21.png" alt="">
-                              <h2>Bill Gaston</h2>
-                        </div>
-                        <div class="hr-6">
-                        <hr>
-                      </div>
-                       <div class="card">
-                           <img class="kavichki" src="./svg/kavichki.svg" alt="">
-                           <p>Elementum eu facilisis sed odio morbi quis <br>
-                             commodo odio aenean. Neque laoreet suspendiss <br>
-                              interdum consectetur libero id.</p>
-                              <img class="avatar" src="./img/22.png" alt="">
-                              <h2>Jerrod Halbert</h2>
-                        </div>
-                        <div class="hr-6">
-                        <hr>
-                      </div>
-                       <div class="card">
-                           <img class="kavichki" src="./svg/kavichki.svg" alt="">
-                           <p>Leo integer malesuada nunc vel. Mattis <br>
-                             ullamcorper velit sed ullamcorper. Iaculis eu non <br>
-                              diam phasellus vestibulum lorem sed.</p>
-                              <img class="avatar" src="./img/23.png" alt="">
-                              <h2>Harry Peter</h2>
-                        </div>
-                      </div>
-                    </div>
-                      <hr class="card-hr">
-             </div>
-         </div>
-         <div class="main-7-container">
-             <div class="heder-main2 heder-text-main4">
-                <div class="main-2-text">
-                 <h2>Read Our <i>Latest News</i></h2>
+          </div>
+          
+          <div class="dots" id="dots"></div>
+        
+        </div>
+        <div id="prices" class="real main-3-container">
+          <div class="main-3-text">
+            <h2>haircut prices</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              <br />
+              eiusmod tempor incididunt ut labore
+            </p>
+          </div>
+          <div class="main-3-content">
+            <div class="main-3-img">
+              <div class="img3-div-1">
+                <img src="./img/08.png" alt="" />
+              </div>
+              <div class="img-3">
+                <div class="img3-div-2">
+                  <img src="./img/09.jpg" alt="" />
                 </div>
-                 <div class="border">
-                    <img src="./svg/strelka.svg" alt="">
-                 </div>
-               </div>
-               <div class="hr-main2">
-               <hr>
-               </div>
-               <div class="main-7-content">
-               <div class="img-7-container">
-                  <div class="main-7-img-1">
-                     <img class="img-7-absolute" src="./img/Mask group 1.png" alt="">
-                     <span class="span-7-absolute">20 July, 2023</span>
-                     <h2 class="h2-7-absolute">Massa tempor nec</h2>
-                     <button class="btn-7-absolute">hair</button>
-                  </div>
-                  <div class="main-7-img-2">
-                      <img class="img-7-absolute" src="./img/Mask group 2.png" alt="">
-                     <span class="span-7-absolute">20 July, 2023</span>
-                     <h2 class="h2-7-absolute">nulla posuere sollicitudin</h2>
-                     <button class="btn-7-absolute">hair</button>
-                  </div>
-                  <div class="main-7-img-3">
-                      <img class="img-7-absolute" src="./img/Mask group 3.png" alt="">
-                     <span class="span-7-absolute">20 July, 2023</span>
-                     <h2 class="h2-7-absolute">nulla posuere sollicitudin</h2>
-                     <button class="btn-7-absolute">hair</button>
-                  </div>
-               </div>
-               </div>
-         </div>
-           <div class="main-8-container">
-            <div class="text-container">
-                 <div class="main-text-8">
-                  <h2>check our</h2>
-                  <i>hair product</i>
-                  <p>Lorem ipsum dolor sit amet, consectetur <br>
-                     adipiscing elit, sed do eiusmod</p>
-                 </div>
-                 <div class="main-8-svg">
-                        <img src="./svg/whitw-strelochka.svg" alt="">
-                     </div>
-                  </div>
-                 <div class="main-card-8">
-                        <div class="card-8">
-                          <div class="main-8-button">
-                              <button>Mask</button>
-                            </div>
-                              <div class="img-container-8">
-                                   <div class="img-main-content-1">
-                                       <img src="./img/banchka-1.png" alt="">
-                                   </div>
-                              </div>
-                              <div class="card-text-8">
-                                <h2>shampoo nutriente</h2>
-                                <span>$ 30.00</span>
-                              </div>
-                        </div>
-                          <div class="card-8">
-                            <div class="main-8-button">
-                              <button>Mask</button>
-                            </div>
-                              <div class="img-container-8">
-                                   <div class="img-main-content-2">
-                                       <img src="./img/banchka-2.png" alt="">
-                                   </div>
-                              </div>
-                              <div class="card-text-8">
-                                <h2>Daily Hair Mask</h2>
-                                <span>$ 30.00</span>
-                              </div>
-                        </div>
-                          <div class="card-8">
-                            <div class="main-8-button">
-                              <button>Mask</button>
-                            </div>
-                              <div class="img-container-8">
-                                   <div class="img-main-content-3">
-                                       <img src="./img/banchka-3.png" alt="">
-                                   </div>
-                              </div>
-                              <div class="card-text-8">
-                                <h2>pearl styler</h2>
-                                <span>$ 30.00</span>
-                              </div>
-                        </div>
-                 </div>
-           </div>
+              </div>
+            </div>
+            <div class="main-3-cardtext">
+              <div class="main-3-text-img">
+                <h2>hair cut with blow dry</h2>
+                <img src="./svg/Frame (1).svg" alt="" />
+              </div>
+              <div class="main-3-text-svg">
+                <h2>Blow dry & curl</h2>
+                <span>$35</span>
+              </div>
+              <div class="main-3-text-svg">
+                <h2>Blow dry & curl</h2>
+                <span>$35</span>
+              </div>
+              <div class="main-3-text-svg">
+                <h2>Blow dry & curl</h2>
+                <span>$35</span>
+              </div>
+              <div class="main-3-text-svg">
+                <h2>Blow dry & curl</h2>
+                <span>$35</span>
+              </div>
+            </div>
+            <div class="main-3-img main-3-img-content">
+              <div class="img-3">
+                <div class="img3-div-2">
+                  <img src="./img/10.png" alt="" />
+                </div>
+              </div>
+              <div class="img3-div-1">
+                <img src="./img/11.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="hairdresser" class="real main-4-container">
+          <div class="main-4-heder">
+            <div class="heder-main2 heder-text-main4">
+              <div class="main-2-text">
+                <h2>meet the our hairdresser <i>hairdresser</i></h2>
+              </div>
+              <div class="border">
+                <img src="./svg/strelka.svg" alt="" />
+              </div>
+            </div>
+            <div class="hr-main2">
+              <hr />
+            </div>
+          </div>
+          <div class="main-4-content">
+            <h2>If you can dream it you can be it</h2>
+            <div class="main-4-img">
+              <div class="main-4-img-1">
+                <img src="./img/12.png" alt="" />
+              </div>
+              <div class="main-4-img-2">
+                <img src="./img/13.png" alt="" />
+              </div>
+              <div class="main-4-img-3">
+                <img src="./img/14.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="real main-5-container">
+       <div class="main-5-content">
+  <div class="marquee-inner">
+    <span>hair salon</span>
+    <img class="main-5-girl" src="./img/15.png" alt="" />
+    <span>hair style</span>
+    <img class="main-5-star" src="./svg/Star 2.svg" alt="" />
+    <span>hairdresser</span>
+    <img class="main-5-girl" src="./img/16.png" alt="" />
+    <span>hair salon</span>
+    <img class="main-5-star" src="./svg/Star 2.svg" alt="" />
+    <span>hair style</span>
+    <img class="main-5-girl" src="./img/17.png" alt="" />
+    <span>hairdresser</span>
+  </div>
+</div>
+          <div class="main-5-img">
+            <img src="./img/video.png" alt="" />
+          </div>
+        </div>
+        <div id="customer" class="main-6-container">
+          <div class="main-6-content">
+            <div class="main-6-text">
+              <h2>customer reviews</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                <br />
+                eiusmod tempor incididunt ut labore
+              </p>
+            </div>
+            <div class="main-6-card">
+              <hr class="card-hr" />
+              <div class="card-1">
+                <div class="card">
+                  <img class="kavichki" src="./svg/kavichki.svg" alt="" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur <br />
+                    adipiscing elit, sed do eiusmod tempor incididunt <br />
+                    ut labore et dolore magna aliqua.
+                  </p>
+                  <img class="avatar" src="./img/18.png" alt="" />
+                  <h2>Coy Frappier</h2>
+                </div>
+                <div class="hr-6">
+                  <hr />
+                </div>
+                <div class="card">
+                  <img class="kavichki" src="./svg/kavichki.svg" alt="" />
+                  <p>
+                    Congue quisque egestas diam in arcu. Cras <br />
+                    fermentum odio eu feugiat pretium nibh. Viverra <br />
+                    justo nec ultrices dui sapien eget.
+                  </p>
+                  <img class="avatar" src="./img/19.png" alt="" />
+                  <h2>Ahmad Pasrand</h2>
+                </div>
+                <div class="hr-6">
+                  <hr />
+                </div>
+                <div class="card">
+                  <img class="kavichki" src="./svg/kavichki.svg" alt="" />
+                  <p>
+                    Sed vulputate mi sit amet. Malesuada fames ac <br />
+                    turpis egestas. Turpis egestas sed tempus urna et. <br />
+                    Vitae tempus quam pellentesque.
+                  </p>
+                  <img class="avatar" src="./img/20.png" alt="" />
+                  <h2>Woodrow Trusty</h2>
+                </div>
+              </div>
+              <hr class="card-hr" />
+              <div class="card-2">
+                <div class="card">
+                  <img class="kavichki" src="./svg/kavichki.svg" alt="" />
+                  <p>
+                    Dui vivamus arcu felis bibendum ut. Proin <br />
+                    fermentum leo vel orci porta non pulvinar neque. <br />
+                    Feugiat in ante metus dictum at tempor.
+                  </p>
+                  <img class="avatar" src="./img/21.png" alt="" />
+                  <h2>Bill Gaston</h2>
+                </div>
+                <div class="hr-6">
+                  <hr />
+                </div>
+                <div class="card">
+                  <img class="kavichki" src="./svg/kavichki.svg" alt="" />
+                  <p>
+                    Elementum eu facilisis sed odio morbi quis <br />
+                    commodo odio aenean. Neque laoreet suspendiss <br />
+                    interdum consectetur libero id.
+                  </p>
+                  <img class="avatar" src="./img/22.png" alt="" />
+                  <h2>Jerrod Halbert</h2>
+                </div>
+                <div class="hr-6">
+                  <hr />
+                </div>
+                <div class="card">
+                  <img class="kavichki" src="./svg/kavichki.svg" alt="" />
+                  <p>
+                    Leo integer malesuada nunc vel. Mattis <br />
+                    ullamcorper velit sed ullamcorper. Iaculis eu non <br />
+                    diam phasellus vestibulum lorem sed.
+                  </p>
+                  <img class="avatar" src="./img/23.png" alt="" />
+                  <h2>Harry Peter</h2>
+                </div>
+              </div>
+            </div>
+            <hr class="card-hr" />
+          </div>
+        </div>
+        <div id="Latest" class="real main-7-container">
+          <div class="heder-main2 heder-text-main4">
+            <div class="main-2-text">
+              <h2>Read Our <i>Latest News</i></h2>
+            </div>
+            <div class="border">
+              <img src="./svg/strelka.svg" alt="" />
+            </div>
+          </div>
+          <div class="hr-main2">
+            <hr />
+          </div>
+
+          <div class="main-7-content wrapper">
+            <div class="img-7-container swoop" id="swoop">
+              
+                <div class="main-7-img-1 main-7-slide">
+                  <img
+                    class="img-7-absolute"
+                    src="./img/Mask group 1.png"
+                    alt=""
+                  />
+                  <span class="span-7-absolute">20 July, 2023</span>
+                  <h2 class="h2-7-absolute">Massa tempor nec</h2>
+                  <button class="btn-7-absolute">hair</button>
+                </div>
+                <div class="main-7-img-2 main-7-slide">
+                  <img
+                    class="img-7-absolute"
+                    src="./img/Mask group 2.png"
+                    alt=""
+                  />
+                  <span class="span-7-absolute">20 July, 2023</span>
+                  <h2 class="h2-7-absolute">nulla posuere sollicitudin</h2>
+                  <button class="btn-7-absolute">hair</button>
+                </div>
+                <div class="main-7-img-3 main-7-slide">
+                  <img
+                    class="img-7-absolute"
+                    src="./img/Mask group 3.png"
+                    alt=""
+                  />
+                  <span class="span-7-absolute">20 July, 2023</span>
+                  <h2 class="h2-7-absolute">nulla posuere sollicitudin</h2>
+                  <button class="btn-7-absolute">hair</button>
+                </div>
+                 <div class="main-7-img-3 main-7-slide">
+                  <img
+                    class="img-7-absolute"
+                    src="./img/scrol-process-01.jpg"
+                    alt=""
+                  />
+                  <span class="span-7-absolute">20 July, 2023</span>
+                  <h2 class="h2-7-absolute">nulla posuere sollicitudin</h2>
+                  <button class="btn-7-absolute">hair</button>
+                </div>
+                 <div class="main-7-img-3 main-7-slide">
+                  <img
+                    class="img-7-absolute"
+                    src="./img/scroll-proces-02.jpg"
+                    alt=""
+                  />
+                  <span class="span-7-absolute">20 July, 2023</span>
+                  <h2 class="h2-7-absolute">nulla posuere sollicitudin</h2>
+                  <button class="btn-7-absolute">hair</button>
+                </div>
+                 <div class="main-7-img-3 main-7-slide">
+                  <img
+                    class="img-7-absolute"
+                    src="./img/scroll-proces03.jpg"
+                    alt=""
+                  />
+                  <span class="span-7-absolute">20 July, 2023</span>
+                  <h2 class="h2-7-absolute">nulla posuere sollicitudin</h2>
+                  <button class="btn-7-absolute">hair</button>
+                </div>
+                 <div class="main-7-img-3 main-7-slide">
+                  <img
+                    class="img-7-absolute"
+                    src="./img/scroll-proces-04.jpg"
+                    alt=""
+                  />
+                  <span class="span-7-absolute">20 July, 2023</span>
+                  <h2 class="h2-7-absolute">nulla posuere sollicitudin</h2>
+                  <button class="btn-7-absolute">hair</button>
+                </div>
+                 
+                
+              </div>
+                <div class="krugi" id="krugi"></div>
+            </div>
+            <div class="modal" id="modal">
+  <img id="modalImg">
+</div>
+        </div>
+        <div id="product" class="real main-8-container">
+          <div class="text-container">
+            <div class="main-text-8">
+              <h2>check our</h2>
+              <i>hair product</i>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur <br />
+                adipiscing elit, sed do eiusmod
+              </p>
+            </div>
+            <div class="main-8-svg">
+              <img src="./svg/whitw-strelochka.svg" alt="" />
+            </div>
+          </div>
+          <div class="main-card-8">
+            <div class="card-8">
+              <div class="main-8-button">
+                <button onclick="showGroup('img-container-id')" data-id="1" class="btn" id="mask">Mask</button>
+              </div>
+              <div class="img-container-id">
+                <div class="img-main-content-1">
+                  <img src="./img/banka-id-04.jpg" alt="" />
+                </div>
+              </div>
+              <div class="img-id-shampo">
+                <div class="img-main-content-1">
+                  <img src="./img/banka-id-01.jpg" alt="" />
+                </div>
+              </div>
+              <div class="img-id-pearl">
+                <div class="img-main-content-1">
+                  <img src="./img/tubik-id-01.jpg" alt="" />
+                </div>
+              </div>
+              <div class="card-text-8">
+                <h2>shampoo nutriente</h2>
+                <span>$ 30.00</span>
+              </div>
+            </div>
+            <div class="card-8">
+              <div class="main-8-button">
+                <button onclick="showGroup('img-id-shampo')" data-id="2" class="btn" id="shampo">Shampo</button>
+              </div>
+              <div class="img-container-id">
+                <div class="img-main-content-2">
+                  <img src="./img/banka-id-05.jpg" alt="" />
+                </div>
+              </div>
+                <div class="img-id-shampo">
+                <div class="img-main-content-2">
+                  <img src="./img/banka-id-02.jpg" alt="" />
+                </div>
+              </div>
+               <div class="img-id-pearl">
+                <div class="img-main-content-2">
+                  <img src="./img/tubik-id-02.jpg" alt="" />
+                </div>
+              </div>
+              <div class="card-text-8">
+                <h2>Daily Hair Mask</h2>
+                <span>$ 30.00</span>
+              </div>
+            </div>
+            <div class="card-8">
+              <div class="main-8-button">
+                <button onclick="showGroup('img-id-pearl')"  data-id="3" class="btn" id="pearl">Pearl</button>
+              </div>
+              <div class="img-container-id">
+                <div class="img-main-content-2">
+                  <img src="./img/banka-id-06.jpg" alt="" />
+                </div>
+              </div>
+              <div class="img-id-shampo">
+                <div class="img-main-content-2">
+                  <img src="./img/banka-id-03.jpg" alt="" />
+                </div>
+              </div>
+               <div class="img-id-pearl">
+                <div class="img-main-content-2">
+                  <img src="./img/tubik-id-03.jpg" alt="" />
+                </div>
+              </div>
+              <div class="card-text-8">
+                <h2>pearl styler</h2>
+                <span>$ 30.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <footer>
-          <div class="footer-content">
-                <div class="footer-content-1">
-                   <span class="heder-content">Contact</span>
-                   <span>info@la-studioweb.com</span>
-                   <span>8502 Preston Rd. Inglewood</span>
-                   <span>(308) 555-0121</span>
-                </div>
-                 <hr class="footer-hr">
-                <div class="footer-content-2">
-
-                  <div class="footer-cassini">
-                    <img src="./svg/cassini.svg" alt="">
-                  </div>
-
-                  <div class="newsletter-conteiner">
-                    <span>newsletter</span>
-                    <img src="./svg/whitw-strelochka.svg" alt="">
-                  </div>
-
-                  <div class="footer-icno">
-                      <div class="footer-fb">
-                        <img src="./svg/fb.svg" alt="">
-                      </div>
-                         <hr>
-                      <div class="footer-twiter">
-                         <img src="./svg/twiter.svg" alt="">
-                      </div>
-                         <hr>
-                      <div class="footer-insta">
-                        <img src="./svg/insta.svg" alt="">
-                      </div>
-                  </div>
-                  
-                </div>
-                <hr class="footer-hr">
-                <div class="footer-content-3">
-                   <span class="heder-content">Working Hours</span>
-                   <span>Working Days: 9AM - 9PM</span>
-                   <span>Saturday: 10AM - 8PM</span>
-                   <span>Sunday: Closed</span>
-                </div>
+        <div id="contact" class="footer-content">
+          <div class="footer-content-1">
+            <span class="heder-content">Contact</span>
+            <span>info@la-studioweb.com</span>
+            <span>8502 Preston Rd. Inglewood</span>
+            <span>(308) 555-0121</span>
           </div>
+          <hr class="footer-hr" />
+          <div class="footer-content-2">
+            <div class="footer-cassini">
+              <img src="./svg/cassini.svg" alt="" />
+            </div>
+
+            <div class="newsletter-conteiner">
+              <span>newsletter</span>
+              <img src="./svg/whitw-strelochka.svg" alt="" />
+            </div>
+
+            <div class="footer-icno">
+              <div class="footer-fb">
+                <img src="./svg/fb.svg" alt="" />
+              </div>
+              <hr />
+              <div class="footer-twiter">
+                <img src="./svg/twiter.svg" alt="" />
+              </div>
+              <hr />
+              <div class="footer-insta">
+                <img src="./svg/insta.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <hr class="footer-hr" />
+          <div class="footer-content-3">
+            <span class="heder-content">Working Hours</span>
+            <span>Working Days: 9AM - 9PM</span>
+            <span>Saturday: 10AM - 8PM</span>
+            <span>Sunday: Closed</span>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
