@@ -85,98 +85,6 @@ if(btn) {
 
 
 
-const track = document.querySelector('.track');
-const dotsContainer = document.getElementById('dots');
-const images = document.querySelectorAll('.track img');
-
-let currentIndex = 0;
-const visibleSlides = 3;
-const totalSlides = images.length - (visibleSlides - 1);
-
-for (let i = 0; i < totalSlides; i++) {
-  const dot = document.createElement('span');
-  if (i === 0) dot.classList.add('active');
-
-  dot.addEventListener('click', () => {
-    currentIndex = i;
-    updateSlider();
-  });
-
-  dotsContainer.appendChild(dot);
-}
-
-function updateSlider() {
-  const slideWidth = images[0].offsetWidth + 20;
-  track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-
-  document.querySelectorAll('.dots span').forEach(dot => dot.classList.remove('active'));
-  dotsContainer.children[currentIndex].classList.add('active');
-}
-
-
-const swoop = document.getElementById("swoop");
-const slides = document.querySelectorAll(".main-7-slide");
-const krugiContainer = document.getElementById("krugi");
-const modal = document.getElementById("modal");
-const modalImg = document.getElementById("modalImg");
-
-if(swoop) {
-
-/* -------- CREATE KRUGI -------- */
-
-slides.forEach((_, index) => {
-  const krug = document.createElement("span");
-
-  krug.addEventListener("click", () => {
-    const slideWidth = slides[0].offsetWidth + 20;
-
-    swoop.scrollTo({
-      left: slideWidth * index,
-      behavior: "smooth"
-    });
-  });
-
-  krugiContainer.appendChild(krug);
-});
-
-function updateKrugi(index) {
-  const krugi = document.querySelectorAll(".krugi span");
-  krugi.forEach(k => k.classList.remove("active"));
-
-  if (krugi[index]) {
-    krugi[index].classList.add("active");
-  }
-}
-
-updateKrugi(0);
-
-/* -------- SCROLL LOGIC -------- */
-
-swoop.addEventListener("scroll", () => {
-  const slideWidth = slides[0].offsetWidth + 20;
-  const index = Math.round(swoop.scrollLeft / slideWidth);
-
-  updateKrugi(index);
-});
-
-/* -------- MODAL -------- */
-
-slides.forEach(slide => {
-  slide.addEventListener("click", () => {
-    const img = slide.querySelector("img");
-
-    modal.style.display = "flex";
-    modalImg.src = img.src;
-    document.body.style.overflow = "hidden";
-  });
-});
-
-modal.addEventListener("click", () => {
-  modal.style.display = "none";
-  document.body.style.overflow = "auto";
-});
-
-}
 
 const elements = document.querySelectorAll('.real');
 
@@ -200,11 +108,11 @@ let active = null;
 
 const buttons = document.querySelectorAll('.main-8-button .btn');
 
-
+if(buttons) {
 buttons[0].classList.add('active');
 active = buttons[0].dataset.id;
 console.log("Активная кнопка при загрузке:", active);
-
+}
 
 buttons.forEach(btn => {
   btn.addEventListener('click', () => {
@@ -243,3 +151,27 @@ function showGroup(groupToShow) {
     });
   });
 }
+
+
+const gallery1 = document.querySelector('.gallery');
+const leftBtn = document.querySelector('.scroll-btn.left');
+const rightBtn = document.querySelector('.scroll-btn.right');
+
+function getVisibleCount() {
+  const width = window.innerWidth;
+  if (width <= 768) return 1;       // мобильный
+  if (width <= 1024) return 2;      // планшет
+  return 3;                          // desktop
+}
+
+leftBtn.addEventListener('click', () => {
+  const photoWidth = gallery1.querySelector('img').offsetWidth + 10; // +gap
+  const visibleCount = getVisibleCount();
+  gallery1.scrollBy({ left: -photoWidth * visibleCount, behavior: 'smooth' });
+});
+
+rightBtn.addEventListener('click', () => {
+  const photoWidth = gallery1.querySelector('img').offsetWidth + 10;
+  const visibleCount = getVisibleCount();
+  gallery1.scrollBy({ left: photoWidth * visibleCount, behavior: 'smooth' });
+});

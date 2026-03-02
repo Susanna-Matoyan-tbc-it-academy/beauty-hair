@@ -41,7 +41,7 @@ html {
 
 .container {
   width: 1440px;
-  height: 7000px;
+
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -51,6 +51,7 @@ html {
 .nav-svg img{
   cursor: pointer;
 }
+
 
 nav {
   position: fixed;
@@ -136,16 +137,8 @@ nav {
   cursor: pointer;
 }
 
-
-
 .menu {
   position: relative;
-}
-
-
-.burger {
-  width: 34px;
-  cursor: pointer;
 }
 
 
@@ -309,10 +302,7 @@ h1 {
   gap: 15px;
 }
 
-.main-container-img {
-  width: 546px;
-  height: 416px;
-}
+
 
 .main-button button {
   border: none;
@@ -356,10 +346,6 @@ h1 {
   height: 416px;
 }
 
-.main-img img {
-  width: 100%;
-  height: 100%;
-}
 
 .main-1-container {
   width: 1440px;
@@ -379,7 +365,7 @@ h1 {
   align-items: center;
   width: 605px;
   height: 530px;
-  background: linear-gradient(
+   background: linear-gradient(
     124.267deg,
     #c39246 6%,
     #d1a96a 41%,
@@ -702,7 +688,7 @@ li {
 
 .main-4-container {
   width: 1440px;
-  height: 800px;
+  height: 850px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -710,7 +696,7 @@ li {
 
 .main-4-content {
   width: 1440px;
-  height: 850px;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -800,31 +786,26 @@ li {
   margin-top: 25px;
 }
 
+
 .main-5-content {
+  display: flex;               
+  gap: 20px;                   
+  white-space: nowrap;        
+  overflow: hidden;   
   width: 1440px;
   height: 87px;
-  border-top: 1px solid #D9D9D9;
+  border-top: 1px solid #D9D9D9;        
 }
 
-.main-5-content {
-  display: flex;               /* элементы в ряд */
-  gap: 20px;                   /* расстояние между элементами */
-  white-space: nowrap;         /* все в одну строку */
-  overflow: hidden;            /* скрыть то, что выходит за пределы */
-}
 
-.main-5-content span,
-.main-5-content img {
-  display: inline-block;       /* чтобы span и img были на одной линии */
-  vertical-align: middle;
-}
 
 .marquee-inner {
-  display: inline-flex;
-   width: 1440px;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
-  animation: marquee 10s linear infinite; /* скорость и повторение */
+  justify-content: center;
+  gap: 20px;
+  animation: marquee 10s linear infinite;
+  white-space: nowrap;
 }
 
 @keyframes marquee {
@@ -1074,6 +1055,43 @@ left: 30px;
   border-radius: 12px;
 }
 
+.gallery-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.gallery img {
+  flex: 0 0 calc((100% - 20px * 2) / 3); /* 3 фото на desktop */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.scroll-btn.left { left: 5px; }
+.scroll-btn.right { right: 5px; }
 
 .krugi {
   text-align: center;
@@ -1452,3 +1470,617 @@ margin-bottom: 15px;
   display: none;
 }
 
+.main-container-responsiv{
+  display: none;
+}
+
+.if-you{
+  display: none;
+}
+
+.position-main-04{
+  display: none;
+}
+
+.inner-1{
+  display: none;
+}
+
+
+.main-6-text-1{
+  display: none;
+}
+
+.card-hr-1{
+  display: none;
+}
+
+
+.main-8-banchki-img{
+  display: none;
+}
+
+
+.main-8-btn-mobile {
+  display: none;
+}
+
+.mobail-footer{
+  display: none;
+}
+
+
+@media (min-width: 390px) {
+
+  .nav-a-teg, .nav-svg{
+    display: none;
+  }
+
+  
+  .container{
+    width: 100%;
+  }
+
+  .main-container{
+    width: 100%;
+height: 824px;
+  }
+
+  nav{
+  
+    width: 100%;
+  }
+
+  .nav-2{
+    width: 90%;
+  }
+
+  .main-container-content{
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  .main-img{
+    width: 140px;
+height: 80px;
+
+  }
+
+  .main-img-1 {
+    width: 160px;
+height: 216px;
+
+  }
+
+  .main-text h1{
+    font-size: 28px;
+  }
+
+  .main-text {
+    text-align: center;
+  }
+
+  .main-text i{
+    font-size: 50px;
+  }
+
+
+  .main-content hr{
+    width: 300px;
+  }
+
+  .main-content span{
+    font-size: 15px;
+  }
+  
+
+  .main-container-responsiv{
+    width: 100%;
+   height: 370px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+
+
+  
+
+  .main-container-img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 220px;
+  
+  }
+
+  .main-container-text{
+    display: none;
+  }
+
+  .main-text-hr{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 35px;
+    width: 75%;
+    
+  }
+
+
+ .main-1-container {
+  flex-direction: column;
+       background: linear-gradient(
+    124.267deg,
+    #c39246 6%,
+    #d1a96a 41%,
+    #e5bc7a 77%,
+    #e1bb80 100%
+  );
+  width: 100%;
+   height: 100%;
+ }
+
+  .main-1-text{
+    width: 100%;
+    height: 100%;
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+padding-left: 40px;
+  background: transparent !important;
+  }
+
+ .main-1-img {
+  width: 100%;
+height: auto;
+ }
+
+
+ .main-1-text-container{
+  width: 100%;
+ }
+
+
+ .main-2-container{
+  margin-top: 40px;
+  width: 100%;
+   height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .main-2-responsiv{
+  height: 450px;
+  width: 100%;
+ }
+
+ .main-2-text {
+  width: 100%;
+ }
+
+ .main-2-text h2{
+  text-align: center;
+  font-size: 32px;
+ }
+
+ .img-main2-container{
+  width: 100%;
+ }
+
+ .heder-main2{
+  width: 100%;
+  display: flex;
+  align-items: center;
+ }
+
+ .hr-main2 hr{
+  width: 350px;
+ }
+
+ .border{
+  display: none;
+ }
+
+ .img-main2-div{
+  width: 207px;
+height: 246px;
+ }
+
+
+ .track{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ }
+
+ .slider{
+  width: 100%;
+ }
+
+.main-3-container {
+  width: 100%;
+ 
+}
+
+
+
+.main-3-img{
+  display: none;
+}
+
+.main-3-content{
+  width: 100%;
+}
+
+.main-3-cardtext{
+  width: 100%;
+}
+
+.main-3-text-img, .main-3-text-svg{
+  margin: 0 auto;
+  width: 350px;
+}
+
+.main-4-container{
+  width: 100%;
+  height: 600px;
+}
+
+.main-4-heder{
+  width: 100%;
+}
+
+.main-4-content{
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+   position: none;
+     display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.if-you{
+  display: block;
+  height: 95px;
+  width: 390px;
+  background-image: url(./img/If\ you\ can\ dream\ it\ you\ can\ be\ it.png);
+}
+
+.position-main-04{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 390px;
+  height: 300px;
+}
+
+.main-4-content h2{
+   display: none;
+}
+
+.main-4-img-1{
+ left: 10px;
+}
+
+.main-4-img-3{
+right: 10px;
+}
+
+.main-4-img-1, .main-4-img-3{
+  width: 110px;
+  height: 130px;
+  top: 80px;
+} 
+
+.main-4-img-2{
+left: 125px;
+  width: 136px;
+  height: 210px;
+  top: 10px;
+}
+
+.main-5-container {
+        width: 100%;
+     height: 500px;
+
+     display: flex;
+     justify-content: flex-start;
+}
+
+.inner{
+  display: none;
+}
+
+.inner-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.main-5-content {
+  width: 100%;
+   margin: 0 auto;
+   gap: 0;
+   justify-content: center;
+   height: 50px;
+}
+
+.marquee-inne {
+    width: 100%;
+    gap: 0px;
+}
+
+
+.main-5-star{
+  width: 20px;
+  height: 20px;
+}
+
+.inner-1 span {
+  font-size: 10px;
+}
+
+.inner-1 img {
+width: 44px;
+height: 20px;
+}
+
+
+.main-5-img{
+  width: 100%;
+  height: auto;
+}
+
+.main-6-container{
+  width: 100%;
+  height: 1500px;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+}
+
+.card{
+  gap: 7px;
+}
+
+.card-1, .card-2{
+  width: 100%;
+  flex-direction: column;
+}
+
+
+
+.main-6-text{
+ display: none;
+}
+
+.main-6-text-1{
+  display: flex;
+  flex-direction: column;
+   gap: 15px;
+}
+
+.hr-6{
+  display: none;
+}
+
+.main-6-card{
+  width: 100%;
+}
+
+
+.main-6-content{
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+.card:hover {
+  border-radius: 10px;
+  transform: rotate(15deg);
+}
+
+
+.card-mobile-1{
+  padding-top: 25px;
+}
+
+.card-mobile-3{
+  padding-bottom: 25px;
+}
+
+.card-2{
+  gap: 0px;
+}
+
+.card-1, .card-2{
+  display: flex;
+  gap: 30px;
+
+}
+
+.card-hr{
+  display: none;
+}
+.card-hr-2{
+  display: none;
+}
+
+
+
+.main-7-container, .main-7-content, .img-7-container{
+  width: 100%;
+}
+
+
+.main-7-text{
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-7-container {
+  height: 900px;
+}
+
+.main-2-text h2{
+  margin-bottom: 20px;
+}
+
+  .gallery img {
+    flex: 0 0 100%; 
+  }
+
+.main-7-slide {
+  min-width: 100%;
+}
+
+
+.main-7-img-2{
+  width: 100%;
+}
+
+.main-8-container, .text-container{
+  width: 100%;
+}
+
+
+.main-8-container {
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  height: 1500px;
+  background-color: #221604;
+}
+
+
+.main-card-8{
+  width: 100%;
+  height: 65%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+.card-8{
+  width: 100%;
+   flex-direction: column;
+    align-items: center;
+
+}
+
+
+.main-8-btn-mobile{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.main-text-8{
+  text-align: center;
+}
+
+.text-container{
+   display: flex;
+     width: 100%;
+  align-items: center;
+
+}
+
+
+.main-8-btn-mobile{
+  margin-top: 10px;
+  width: 100%;
+   padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-8-button{
+  display: none;
+}
+
+.main-8-button-respons{
+  width: 100px;
+  display: block;
+}
+
+.main-8-btn-mobile button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.main-8-btn-mobile button:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+.main-8-button-respons button {
+  width: 100px;
+}
+
+.footer-content{
+  width: 100%;
+  height: 590px;
+  flex-direction: column;
+align-items: center;
+  
+}
+
+.footer-content-1{
+  width: 100%;
+}
+
+
+
+.footer-hr{
+  display: none;
+}
+
+
+footer{
+  width: 100%;
+   height: 690px;
+   
+}
+
+.footer-insta img{
+  width: 17px;
+  height: 17px;
+}
+
+.footer-content-2{
+  display: none;
+}
+
+.mobail-footer{
+  display: flex;
+  gap: 30px;
+}
+
+}  
