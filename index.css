@@ -120,6 +120,10 @@ nav {
   gap: 20px;
 }
 
+ #goBtn, #btn{
+  font-size: 15px;
+}
+
 .line {
   width: 1px;
   height: 58px;
@@ -1505,7 +1509,7 @@ margin-bottom: 15px;
   display: none;
 }
 
-.mobail-footer{
+.mobail-footer , .card-1-responsiv, .card-2-responsiv{
   display: none;
 }
 
@@ -1516,6 +1520,9 @@ margin-bottom: 15px;
     display: none;
   }
 
+  main{
+    width: 100%;
+  }
   
   .container{
     width: 100%;
@@ -1530,6 +1537,7 @@ height: 824px;
   
     width: 100%;
   }
+
 
   .nav-2{
     width: 90%;
@@ -1567,6 +1575,8 @@ height: 216px;
   .main-text i{
     font-size: 50px;
   }
+
+
 
 
   .main-content hr{
@@ -1792,8 +1802,7 @@ left: 125px;
 
 .main-5-container {
         width: 100%;
-     height: 500px;
-
+     height: 300px;
      display: flex;
      justify-content: flex-start;
 }
@@ -1850,6 +1859,7 @@ height: 20px;
   display: flex;
   flex-direction: column;
  justify-content: center;
+ 
 }
 
 .card{
@@ -1857,8 +1867,18 @@ height: 20px;
 }
 
 .card-1, .card-2{
+  display: none;
+}
+
+
+.card-1-responsiv, .card-2-responsiv{
+  display: flex;
   width: 100%;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   gap: 30px;
+
 }
 
 
@@ -1911,15 +1931,6 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding-bottom: 25px;
 }
 
-.card-2{
-  gap: 0px;
-}
-
-.card-1, .card-2{
-  display: flex;
-  gap: 30px;
-
-}
 
 .card-hr{
   display: none;
@@ -1954,8 +1965,8 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 
 .main-7-img-2 img{
-  width: 400px;
-  height: 400px;
+  width: 390px;
+  height: 390px;
 }
 
 .img-7-container{
@@ -2128,6 +2139,10 @@ footer{
    .main-card-8{
   display: flex;
   flex-direction: row;
+}
+
+.main-5-container{
+  height: 400px;
 }
 
   .main-8-container{
