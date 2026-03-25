@@ -40,6 +40,7 @@ nav {
   position: fixed;
   width: 1440px;
   height: 130px;
+  z-index: 1;
 }
 
 .main-button button {
@@ -175,6 +176,10 @@ nav {
   text-align: center;
   text-transform: capitalize;
   text-decoration: none;
+  color: white;
+}
+
+.nav-a-teg-container a{
   color: black;
 }
 
@@ -205,7 +210,6 @@ text-transform: capitalize;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 
@@ -1252,4 +1256,401 @@ letter-spacing: 0px;
 text-align: center;
 text-transform: capitalize;
 margin-bottom: 15px;
+}
+
+.main-5-fototext-responsiv{
+  display: none;
+}
+
+
+.content-2-responsiv, .responsiv-main-2-text, .main-text-responsiv, .response-8-p{
+  display: none;
+}
+
+.content-8{
+  display: none;
+}
+
+
+
+@media (min-width: 390px) {
+
+  .nav-a-teg-respon, .nav-svg{
+    display: none;
+  }
+
+
+   nav{
+  width: 100%;
+ }
+
+ .nav-2{
+  width: 90%;
+ }
+  
+
+ main{
+  width: 100%;
+ }
+
+  
+  .container{
+    width: 100%;
+  
+  }
+
+  .main-1-container{
+    width: 100%;
+    height: 1200px;
+  } 
+
+
+   .main-1-content{
+  width: 100%;
+  height: 900px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+  .main-1-heder{
+    width: 100%;
+   padding-left: 20px;
+  }
+
+
+  .photo-wrapper{
+    width: 325px;
+height: 359px;
+  }
+
+  .photo-wrapper img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-1-text{
+   padding-left: 40px;
+    width: 100%;
+  }
+
+  .orange-border-container{
+    width: 100%;
+  }
+
+
+  .strelchka-container{
+    width: 100%;
+  }
+
+  .main-2-container{
+    width: 100%;
+    height: 1300px;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  .content-2-responsiv{
+     width: 100%;
+    height: 1100px;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .main-2-heder{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-2-content{
+    height: 780px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .main-2-text {
+    display: none;
+  }
+
+  .main-2-img-02 {
+    width: 223px;
+height: 223px;
+   right: 140px;
+   top: 90px;
+  }
+
+  
+  .main-2-img-01 {
+    width: 96px;
+height: 96px;
+   right: 240px;
+   top: 280px;
+  }
+
+  .main-2-img-03 {
+    width: 139px;
+height: 223px;
+  }
+
+  .main-2-img{
+    width: 390px;
+    height: 400px;
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+   .responsiv-main-2-text{
+    display: flex;
+    gap: 15px;
+    padding-left: 15px;
+   }
+
+   .text-2{
+    display: flex;
+    gap: 15px;
+   }
+
+   .main-3-container{
+    width: 100%;
+   }
+
+   .main-3-p{
+    display: none;
+   }
+
+   .main-text-responsiv{
+    display: block;
+   }
+
+   .main-4-container{
+    background-color: white;
+    width: 100%;
+   }
+
+  .main-4-content {
+    width: 100%;
+  }
+
+  .main-4-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-5-container{
+    width: 100%;
+    height: 1550px;
+    flex-direction: column;
+  }
+
+  .main-5-img-01 img{
+    width: 325px;
+height: 396px;
+  }
+
+  .main-5-fototext{
+    display: none;
+  }
+
+  .main-5-fototext-responsiv{
+    display: block;
+  }
+
+  .main-6-container {
+    width: 100%;
+  height: 2000px;
+background-color: white;
+  }
+
+  .main-6-content{
+    width: 100%;
+     height: 100%;
+  }
+
+  .main-6-content h3{
+    margin-top: 40px;
+  }
+
+  .card-6{
+    width: 100%;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 40px;
+  }
+
+  .main-8-container{
+    width: 100%;
+    height: 900px;
+   background-color: white;
+      
+  }
+
+  .card-8-strelochka, .card-8-strelochka-02{
+    display: none;
+  }
+
+  .main-8-card-container{
+    width: 100%;
+  }
+
+  
+
+  .card-8-main{
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+  }
+
+  .card-8-text p {
+    text-align: center;
+    font-size: 15px;
+  }
+
+
+
+  .respon{
+    display: none;
+  }
+
+  .main-8-svg-content{
+    width: 100%;
+  }
+
+  .main-8-svg-01 {
+    width: 62px;
+height: 38px;
+  }
+
+  .main-8-svg-02 {
+    width: 63px;
+height: 41px;
+  }
+
+  .main-8-svg-03 {
+    width: 53px;
+height: 38px;
+  }
+
+  .main-8-svg-04 {
+    width: 70px;
+height: 23px;
+  }
+
+  .card-text-main-8{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-8 {
+    display: block;
+    height: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .desktop-8-p{
+    display: none;
+  }
+
+  .response-8-p{
+    display: block;
+  }
+
+  .main-9-container{
+    width: 100%;
+    height: 1900px;
+    background-color: white;
+  }
+
+  .main-9-img-container{
+    width: 100%;
+    height:  1600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .main-9-text h2 {
+    text-align: center;
+  }
+
+  .main-9-img-container img {
+    width: 325px;
+height: 344px;
+  }
+
+  .main-10-container{
+    
+    width: 100%;
+    height: 100px;
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+
+  
+footer{
+  width: 100%;
+  height: 670px;
+}
+
+.footer-mobile{
+  width: 100%;
+   height: 670px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+  
+.footer-content{
+  width: 100%;
+  height: 570px;
+  flex-direction: column;
+align-items: center;
+  justify-content: space-between;
+
+}
+
+.footer-content-1{
+  width: 100%;
+}
+
+
+
+.footer-hr{
+  display: none;
+}
+
+.footer-insta img{
+  width: 17px;
+  height: 17px;
+}
+
+
+
 }
