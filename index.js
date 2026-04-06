@@ -1,5 +1,6 @@
 
 
+
 const goBtn = document.getElementById("goBtn");
 if (goBtn) {
   goBtn.addEventListener("click", () => {
@@ -104,36 +105,40 @@ if (elements && elements.length > 0) {
   elements.forEach(el => observer.observe(el));
 }
 
-let active = null;
+ 
+function initButtons() {
+  const buttons = document.querySelectorAll('.main-8-button .btn');
 
-const buttons = document.querySelectorAll('.main-8-button .btn');
+  if (buttons.length === 0) return;
 
-if(buttons) {
-buttons[0].classList.add('active');
-active = buttons[0].dataset.id;
-console.log("Активная кнопка при загрузке:", active);
-}
+  let active = null;
 
-buttons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    // Убираем active у всех кнопок
+  const setActive = (btn) => {
     buttons.forEach(b => b.classList.remove('active'));
-
-    // Делаем активной кнопку, на которую кликнули
     btn.classList.add('active');
 
-    // Обновляем переменную
     active = btn.dataset.id;
-    console.log("Активная кнопка:", active);
+    console.log('Активная кнопка:', active);
+  };
+
+  setActive(buttons[0]);
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => setActive(btn));
   });
-});
+}
+
+initButtons();
+
+
+
+
+
 
 
 const one = document.querySelector('.img-container-8');
 const two = document.querySelector('.img-id-shampo');
 const three = document.querySelector('.img-id-pearl');
-
-
 
 
 
@@ -153,25 +158,34 @@ function showGroup(groupToShow) {
 }
 
 
-const gallery1 = document.querySelector('.gallery');
-const leftBtn = document.querySelector('.scroll-btn.left');
-const rightBtn = document.querySelector('.scroll-btn.right');
 
-function getVisibleCount() {
-  const width = window.innerWidth;
-  if (width <= 768) return 1;       // мобильный
-  if (width <= 1024) return 2;      // планшет
-  return 3;                          // desktop
+
+
+
+
+
+const bookingBtn = document.getElementById("bookingBtn");
+
+const form = document.querySelector("form");
+
+if(bookingBtn) {
+
+
+bookingBtn.addEventListener('click', () => {
+
+  form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  Swal.fire({
+    title: "Booking confirmed!",
+    text: "You have successfully booked!",
+    icon: "success",
+    confirmButtonText: "OK"
+  }).then(() => {
+    form.reset();
+  });
+});
+
+})
 }
 
-leftBtn.addEventListener('click', () => {
-  const photoWidth = gallery1.querySelector('img').offsetWidth + 10; // +gap
-  const visibleCount = getVisibleCount();
-  gallery1.scrollBy({ left: -photoWidth * visibleCount, behavior: 'smooth' });
-});
-
-rightBtn.addEventListener('click', () => {
-  const photoWidth = gallery1.querySelector('img').offsetWidth + 10;
-  const visibleCount = getVisibleCount();
-  gallery1.scrollBy({ left: photoWidth * visibleCount, behavior: 'smooth' });
-});

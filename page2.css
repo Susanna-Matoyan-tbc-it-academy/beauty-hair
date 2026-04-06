@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+img:hover {
+  transform: scale(1.1);
+}
+
 .container {
   width: 1440px;
   height: 7000px;
@@ -89,6 +93,10 @@ nav {
   transform: translateY(-10px);
 
   transition: 0.25s ease;
+}
+
+ #goBtn, #btn{
+  font-size: 15px;
 }
 
 
@@ -1102,6 +1110,9 @@ text-transform: capitalize;
 margin-top: 20px;
 }
 
+.text-8 h2{
+  text-align: center;
+}
 
 
 .main-9-container{
@@ -1263,17 +1274,14 @@ margin-bottom: 15px;
 }
 
 
-.content-2-responsiv, .responsiv-main-2-text, .main-text-responsiv, .response-8-p{
-  display: none;
-}
-
-.content-8{
+ .responsiv-main-2-text, .main-text-responsiv, .response-8-p{
   display: none;
 }
 
 
 
-@media (min-width: 390px) {
+
+@media (min-width: 390px) and (max-width: 1000px) {
 
   .nav-a-teg-respon, .nav-svg{
     display: none;
@@ -1422,6 +1430,11 @@ height: 223px;
     display: flex;
     gap: 15px;
    }
+
+  .main-2-card:hover{
+  border-radius: 10px;
+  transform: rotate(15deg);
+}
 
    .main-3-container{
     width: 100%;
