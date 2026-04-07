@@ -10,7 +10,6 @@ img:hover {
 
 .container {
   width: 1440px;
-  height: 7000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1436,6 +1435,8 @@ height: 223px;
   transform: rotate(15deg);
 }
 
+
+
    .main-3-container{
     width: 100%;
    }
@@ -1463,6 +1464,11 @@ height: 223px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+
+  .responsive-none{
+    display: none;
   }
 
   .main-5-container{

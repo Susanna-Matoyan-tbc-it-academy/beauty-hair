@@ -56,7 +56,7 @@ if(btn) {
   })
 }
 
-  const gallery = document.querySelector(".img-main2-container")
+  // const gallery = document.querySelector(".img-main2-container")
 
 
 //  if (gallery) {
@@ -189,3 +189,44 @@ bookingBtn.addEventListener('click', () => {
 })
 }
 
+
+const galleries = document.querySelectorAll('.wrapper-rombik');
+
+galleries.forEach(block => {
+  const gallery = block.querySelector('.gallery-rombik');
+  const dotsContainer = block.querySelector('.dots');
+  const slides = gallery.querySelectorAll('img');
+
+  const totalDots = 5;
+
+  for (let i = 0; i < totalDots; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+
+    if (i === 0) dot.classList.add('active');
+
+    dot.addEventListener('click', () => {
+      const scrollWidth = gallery.scrollWidth - gallery.clientWidth;
+      const step = scrollWidth / (totalDots - 1);
+
+      gallery.scrollTo({
+        left: step * i,
+        behavior: 'smooth'
+      });
+    });
+
+    dotsContainer.appendChild(dot);
+  }
+
+  const dots = dotsContainer.querySelectorAll('.dot');
+
+  gallery.addEventListener('scroll', () => {
+    const scrollWidth = gallery.scrollWidth - gallery.clientWidth;
+    const percent = gallery.scrollLeft / scrollWidth;
+
+    const index = Math.round(percent * (dots.length - 1));
+
+    dots.forEach(dot => dot.classList.remove('active'));
+    if (dots[index]) dots[index].classList.add('active');
+  });
+});
